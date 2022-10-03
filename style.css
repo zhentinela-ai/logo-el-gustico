@@ -1,0 +1,93 @@
+:root {
+  --gold: radial-gradient(
+      ellipse farthest-corner at right bottom,
+      #fedb37 0%,
+      #fdb931 8%,
+      #9f7928 30%,
+      #8a6e2f 40%,
+      transparent 80%
+    ),
+    radial-gradient(
+      ellipse farthest-corner at left top,
+      #ffffff 0%,
+      #ffffac 8%,
+      #d1b464 25%,
+      #5d4a1f 62.5%,
+      #5d4a1f 100%
+    );
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.logo {
+  position: relative;
+  width: 400px;
+  height: 400px;
+}
+
+.burger {
+  position: relative;
+  top: 36%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+}
+
+.corona {
+  position: relative;
+  /* background: var(--gold); */
+  /* background-image: url("./fondo-de-la-textura-del-metal-oro.jpg"); */
+  z-index: 2;
+}
+
+.corona path {
+  fill: transparent;
+  fill: #9f7928;
+  stroke-width: 5;
+  stroke: #5d4a1f;
+}
+
+h1 {
+  position: absolute;
+  text-transform: capitalize;
+  color: #9f7928;
+  font-size: 3.8rem;
+  letter-spacing: 4px;
+  z-index: 1;
+}
+
+h1:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-170px) translateY(116px);
+}
+
+h1:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translateX(-43.5px) translateY(116px);
+}
+
+.lechuga {
+  fill: green;
+}
+
+.cheese {
+  fill: #dfcc00;
+}
+
+.bread {
+  fill: #ff6b2e;
+}
